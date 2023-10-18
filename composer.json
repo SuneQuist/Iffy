@@ -1,0 +1,30 @@
+{
+  "name": "sune/iffy",
+  "type": "package",
+  "description": "Idk the package name was just random, there's legit no reason for it, except I though - 'eh that fine/iffy', 'iffy' means 'fine', in my own randomly made-up language in my head.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sune",
+      "email": "sunevinterhoej@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Iffy\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "Iffy\\Providers\\IffyServiceProvider"
+      ],
+      "aliases": {
+        "Iffy": "Iffy\\Facades\\IffyFacade"
+      }
+    }
+  }
+}
